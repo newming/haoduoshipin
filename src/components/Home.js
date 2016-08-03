@@ -11,7 +11,7 @@ class Home extends React.Component {
       title:{
         color:'#fff',
         textAlign:'center',
-        paddingTop:'30%'
+        paddingTop:'45vh'
       }
     }
     return(
