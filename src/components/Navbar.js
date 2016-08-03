@@ -19,7 +19,8 @@ class Navbar extends React.Component {
       },
       link:{
         textDecoration:'none',
-        display:'block'
+        display:'block',
+        color:'#333'
       }
     }
     return (
@@ -37,13 +38,13 @@ class Navbar extends React.Component {
         >
           <div style={styles.menu}>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="/" style={styles.link} activeStyle={{color: 'red'}} onlyActiveOnIndex={true}>首页</Link>
+              <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="blog" style={styles.link} activeStyle={{color: 'red'}}>博客</Link>
+              <Link to="blog" style={styles.link} activeStyle={{color: '#E91E63'}}>博客</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="about" style={styles.link} activeStyle={{color: 'red'}}>关于</Link>
+              <Link to="about" style={styles.link} activeStyle={{color: '#E91E63'}}>关于</Link>
             </MenuItem>
           </div>
         </Drawer>
