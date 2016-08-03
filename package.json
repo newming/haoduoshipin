@@ -59,8 +59,8 @@
     "highlight.js": "^9.5.0",
     "marked": "^0.3.6",
     "material-ui": "^0.15.2",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
     "react-router": "^2.6.1",
     "react-tap-event-plugin": "^1.0.0"
   }

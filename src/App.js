@@ -1,19 +1,23 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+import Navbar from './components/Navbar.js';
 
 class App extends React.Component {
+  getChildContext() {
+    return {muiTheme: getMuiTheme()};
+  }
   render () {
     return(
       <div>
-        <div style={{position:'absolute'}}>
-          <Link to="/">首页</Link><br/>
-          <Link to="blog">博客</Link><br/>
-          <Link to="about">关于</Link>
-        </div>
+        <Navbar />
         {this.props.children}
       </div>
     )
   }
 }
 
+App.childContextTypes = {
+  muiTheme: PropTypes.object.isRequired,
+};
 export default App;
