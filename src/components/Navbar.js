@@ -37,7 +37,7 @@ class Navbar extends React.Component {
         >
           <div style={styles.menu}>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
-              <Link to="/" style={styles.link} activeStyle={{color: 'red'}}>首页</Link>
+              <Link to="/" style={styles.link} activeStyle={{color: 'red'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
               <Link to="blog" style={styles.link} activeStyle={{color: 'red'}}>博客</Link>
