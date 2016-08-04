@@ -5,24 +5,30 @@ import {getUserInfo} from '../utils/helpers.js';
 import CircularProgress from 'material-ui/CircularProgress';
 
 import GitInfo from '../components/GitInfo.js';
+import Echarts from '../components/Echarts.js';
 
 class About extends React.Component {
   constructor(){
     super();
     this.state={
+      input:'',
       bio:{},
       wait:0
     }
+  }
+  handleChange(e){
+    this.setState({input:e.target.value})
   }
   handleSubmit(e){
     this.setState({
       wait:1
     })
     e.preventDefault();
-    let account = this.refs.account.getValue();
+    let account = this.state.input;
     getUserInfo(account)
       .then((data) => {
         this.setState({
+          input:'',
           bio:data.bio,
           wait:2
         })
@@ -59,11 +65,15 @@ class About extends React.Component {
         <h2 style={styles.title}>Search Github Info</h2>
         <div style={styles.search}>
           <form onSubmit={this.handleSubmit.bind(this)}>
-            <TextField hintText="search github" style={styles.field} ref="account"/>
+            <TextField hintText="search github"
+              style={styles.field}
+              value={this.state.input}
+              onChange={this.handleChange.bind(this)}/>
             <FlatButton label="搜索" primary={true} type="submit"/>
           </form>
         </div>
         {gitContent}
+        <Echarts />
       </div>
     )
   }

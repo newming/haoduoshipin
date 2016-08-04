@@ -7,6 +7,12 @@ class GitInfo extends React.Component {
       root:{
         textAlign:'center'
       },
+      name:{
+        color:'#00BCD4',
+        fontWeight:'600',
+        fontSize:'32px',
+        lineHeight:'60px'
+      },
       img:{
         borderRadius:'50%',
         width:'100%',
@@ -17,6 +23,7 @@ class GitInfo extends React.Component {
     // console.log(this.props.info);
     return(
       <div style={styles.root}>
+        <p style={styles.name}>{this.props.info.login}</p>
         <img src={this.props.info.avatar_url} style={styles.img} />
         <Paper className='gitinfo'>
           <div className='gitinfo-card'>
