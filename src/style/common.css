@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.work-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  padding:20px 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.work-list{
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media(min-width:600px){
+  .work-list{
+    width: 33.333%;
+  }
+}
+.work-card{
+  padding:10px;
+}

@@ -8,35 +8,68 @@ import Menu from 'material-ui/svg-icons/navigation/menu';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {
+      open: false,
+      btnColor:true
+    };
   }
   handleToggle(){this.setState({open: !this.state.open})};
   handleClose(){this.setState({open: false})};
+  componentWillMount(){
+    this.setState({
+      btnColor: this.context.router.isActive('/', true) ? true : false
+    });
+  }
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      btnColor: this.context.router.isActive('/', true) ? true : false
+    });
+  }
   render() {
     let styles={
       menu:{
         textAlign:'center'
       },
+      smallIcon:{
+        width:'32px',
+        height:'32px'
+      },
+      small:{
+        position:'absolute',
+        top:'10px',
+        left:'10px',
+        width:'52px',
+        height:'52px',
+        padding:'10px'
+      },
       link:{
         textDecoration:'none',
         display:'block',
         color:'#333'
+      },
+      navTitle:{
+        color:'#fff',
+        lineHeight:'2.8',
+        fontSize:'20px',
+        backgroundColor:'#2196F3',
+        marginBottom:'10px'
       }
     }
     return (
       <div>
         <IconButton tooltip="menu"
           onClick={this.handleToggle.bind(this)}
-          style={{position:'absolute',top:'10px',left:'10px'}}>
-          <Menu color="#fff"/>
+          iconStyle={styles.smallIcon}
+          style={styles.small}>
+          {this.state.btnColor ? <Menu color='#fff'/> : <Menu color='#2196F3'/>}
         </IconButton>
         <Drawer
           docked={false}
           width={200}
           open={this.state.open}
-          onRequestChange={(open) => this.setState({open})}
-        >
+          onRequestChange={(open) => this.setState({open})} >
           <div style={styles.menu}>
+            <p style={styles.navTitle}>NEWMING'S CORNER</p>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
               <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>

@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 
 class App extends React.Component {
   getChildContext() {
@@ -11,7 +12,10 @@ class App extends React.Component {
     return(
       <div>
         <Navbar />
-        {this.props.children}
+        <div style={{minHeight:'470px'}}>
+          {this.props.children}
+        </div>
+        <Footer />
       </div>
     )
   }
