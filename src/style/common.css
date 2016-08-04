@@ -19,6 +19,7 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
+  justify-content: space-around;
   padding:20px 10px;
   max-width: 980px;
   margin: 0 auto;
@@ -29,9 +30,32 @@ body{
 }
 @media(min-width:600px){
   .work-list{
-    width: 33.333%;
+    width: 30%;
   }
 }
 .work-card{
   padding:10px;
+}
+
+.gitinfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin:20px 10px;
+}
+.gitinfo-card{
+  width: 30%;
+  border-right: 1px solid #eee;
+}
+.gitinfo-card:last-child{
+  border-right: 0;
+}
+.gitinfo-card p{
+  line-height: 2.8em;
+}
+.gitinfo-card span{
+  line-height: 2.2em;
+  color:#E91E63;
+  font-weight: 600;
 }

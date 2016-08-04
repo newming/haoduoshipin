@@ -51,7 +51,7 @@ class Navbar extends React.Component {
         color:'#fff',
         lineHeight:'2.8',
         fontSize:'20px',
-        backgroundColor:'#2196F3',
+        backgroundColor:'#00BCD4',
         marginBottom:'10px'
       }
     }
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
           onClick={this.handleToggle.bind(this)}
           iconStyle={styles.smallIcon}
           style={styles.small}>
-          {this.state.btnColor ? <Menu color='#fff'/> : <Menu color='#2196F3'/>}
+          {this.state.btnColor ? <Menu color='#fff'/> : <Menu color='#00BCD4'/>}
         </IconButton>
         <Drawer
           docked={false}
@@ -69,7 +69,7 @@ class Navbar extends React.Component {
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})} >
           <div style={styles.menu}>
-            <p style={styles.navTitle}>NEWMING'S CORNER</p>
+            <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>NEWMING</p>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
               <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>

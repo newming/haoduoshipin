@@ -8,13 +8,22 @@ class Footer extends React.Component {
         textAlign:'center'
       },
       text:{
-        color:'#fff',
-        lineHeight:'160px'
+        color:'#ccc',
+        lineHeight:'100px'
+      },
+      img:{
+        maxWidth:'200px'
+      },
+      wchat:{
+        lineHeight:'40px',
+        color:'#ccc'
       }
     }
     return(
       <div style={styles.root}>
-        <h1 style={styles.text}>早起得鸟儿有虫吃！！</h1>
+        <h1 style={styles.text}>越努力 越辛运</h1>
+        <img src="http://7xopqp.com1.z0.glb.clouddn.com/aboutme.jpg" title="me" style={styles.img}/>
+        <p style={styles.wchat}>欢迎添加微信：newming1993</p>
       </div>
     )
   }

@@ -16,7 +16,7 @@ class Home extends React.Component {
         fontSize:'48px'
       },
       span:{
-        color:'#2196F3',
+        color:'#00BCD4',
         fontSize:'36px'
       },
       cover:{
