@@ -38,6 +38,13 @@ class Works extends React.Component {
             </CardMedia>
           </Card>
         </a>
+        <a href="http://newming.github.io/myweb" className="work-list">
+          <Card className="work-card">
+            <CardMedia overlay={<CardTitle title="初学小做" subtitle="大三上学期参赛作品" style={styles.title}/>} >
+              <img src="http://7xopqp.com1.z0.glb.clouddn.com/contain4.jpg" />
+            </CardMedia>
+          </Card>
+        </a>
       </div>
     )
   }

@@ -48,7 +48,6 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "file-loader": "^0.8.5",
-    "lodash": "^3.10.1",
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9",
@@ -58,6 +57,7 @@
   "dependencies": {
     "echarts": "^3.2.2",
     "highlight.js": "^9.5.0",
+    "lodash": "^4.14.1",
     "marked": "^0.3.6",
     "material-ui": "^0.15.2",
     "react": "^15.2.0",

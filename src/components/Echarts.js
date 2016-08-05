@@ -5,6 +5,14 @@ class Echarts extends React.Component {
   componentDidMount(){
     var myChart = echarts.init(document.getElementById('main'));
     myChart.setOption({
+      title:{
+        show:true,
+        text:'我的技能展示',
+        left:'center',
+        textStyle:{
+          color:'#2196F3'
+        }
+      },
       color: ['#3398DB'],
       tooltip : {
         trigger: 'axis',
@@ -29,7 +37,12 @@ class Echarts extends React.Component {
       ],
       yAxis : [
         {
-          type : 'value'
+          type : 'value',
+          name:'百分数(%)',
+          nameTextStyle:{
+            color:'#2196F3',
+            fontSize:'16'
+          }
         }
       ],
       series : [

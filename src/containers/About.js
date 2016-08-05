@@ -68,7 +68,8 @@ class About extends React.Component {
             <TextField hintText="search github"
               style={styles.field}
               value={this.state.input}
-              onChange={this.handleChange.bind(this)}/>
+              onChange={this.handleChange.bind(this)}
+              inputStyle={{color:'#00BCD4'}}/>
             <FlatButton label="搜索" primary={true} type="submit"/>
           </form>
         </div>

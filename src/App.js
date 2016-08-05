@@ -12,7 +12,7 @@ class App extends React.Component {
     return(
       <div>
         <Navbar />
-        <div style={{minHeight:'470px'}}>
+        <div style={{minHeight:'450px'}}>
           {this.props.children}
         </div>
         <Footer />

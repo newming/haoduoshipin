@@ -9,7 +9,7 @@ class Footer extends React.Component {
       },
       text:{
         color:'#ccc',
-        lineHeight:'100px'
+        lineHeight:'80px'
       },
       img:{
         maxWidth:'200px'

@@ -10,19 +10,24 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       open: false,
-      btnColor:true
+      btnColor:true,
+      title:'Home'
     };
   }
   handleToggle(){this.setState({open: !this.state.open})};
   handleClose(){this.setState({open: false})};
   componentWillMount(){
-    this.setState({
-      btnColor: this.context.router.isActive('/', true) ? true : false
-    });
+    this.setNavState();
   }
   componentWillReceiveProps(nextProps) {
+    this.setNavState();
+  }
+  setNavState(){
     this.setState({
-      btnColor: this.context.router.isActive('/', true) ? true : false
+      btnColor: this.context.router.isActive('/about') ? false : true,
+      title:this.context.router.isActive('/', true) ? 'HOME' :
+        this.context.router.isActive('/blog')? 'BLOG' :
+        this.context.router.isActive('/about')? 'ABOUT' : 'HOME'
     });
   }
   render() {
@@ -65,11 +70,11 @@ class Navbar extends React.Component {
         </IconButton>
         <Drawer
           docked={false}
-          width={200}
+          width={260}
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})} >
           <div style={styles.menu}>
-            <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>NEWMING</p>
+            <p style={styles.navTitle} onClick={this.handleClose.bind(this)}>NEWMING@{this.state.title}</p>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>
               <Link to="/" style={styles.link} activeStyle={{color: '#E91E63'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>
