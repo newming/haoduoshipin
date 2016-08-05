@@ -54,7 +54,7 @@ class Navbar extends React.Component {
       },
       navTitle:{
         color:'#fff',
-        lineHeight:'70px',
+        lineHeight:'75px',
         fontSize:'20px',
         backgroundColor:'#00BCD4',
         marginBottom:'10px'

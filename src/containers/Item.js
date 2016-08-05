@@ -38,7 +38,7 @@ class Item extends React.Component {
     let styles={
       h1:{
         backgroundColor: 'rgb(0, 188, 212)',
-        lineHeight:'70px',
+        lineHeight:'75px',
         textAlign:'center',
         color:'#fff'
       },
