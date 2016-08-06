@@ -1,6 +1,4 @@
-<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
-    Node安装配置
-</h1>
+# Node安装配置
 
 安装 node 的方式很多，这里推荐用 nvm 装 node。
 

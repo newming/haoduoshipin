@@ -14,6 +14,7 @@
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: rgba(33, 150, 243,0.1);
 }
 .work-container{
   display: flex;
@@ -70,6 +71,8 @@ body{
 
 /*post*/
 .post-content {
+  color: #6d6d6d;
+  line-height: 1.8;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;

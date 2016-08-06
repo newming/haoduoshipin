@@ -1,6 +1,4 @@
-<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
-    Git和Github基本操作手册
-</h1>
+# Git和Github基本操作手册
 
 Git 及 Github 在工作学习中非常重要，它不仅仅是一个管理存放代码的仓库，更是一个开源的社区。学习Git及Github的操作是首要技能。
 [廖雪峰的 Git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)

@@ -1,6 +1,4 @@
-<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
-    NPM的使用方法
-</h1>
+# NPM的使用方法
 
 NPM 是随同 Node 一起安装的包管里工具。
 

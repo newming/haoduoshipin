@@ -1,6 +1,4 @@
-<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
-    基本shell命令使用
-</h1>
+# 基本shell命令使用
 
 这里只是列举一些常用的文件操作命令。
 
