@@ -44,7 +44,7 @@ class Item extends React.Component {
         color:'#fff'
       },
       p:{
-        lineHeight:'60px',
+        margin:'20px auto',
         textAlign:'center',
         color:'#777'
       },
