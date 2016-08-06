@@ -6,6 +6,7 @@ import CircularProgress from 'material-ui/CircularProgress';
 import IconButton from 'material-ui/IconButton';
 import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
 import {hashHistory} from 'react-router';
+import {getMarkdown} from '../utils/helpers.js';
 
 class Item extends React.Component {
   constructor(){
@@ -16,10 +17,10 @@ class Item extends React.Component {
     }
   }
   componentDidMount(){
-    let address = `https://raw.githubusercontent.com/newming/haoduoshipin/master/src/blogs/${this.props.params.item}.md`
-    axios.get(address).then((res) => {
+    let address = this.props.params.item;
+    getMarkdown(address).then((res) => {
       this.setState({
-        rawContent: res.data,
+        rawContent: res.rawContent,
         wait:false
       })
     });
