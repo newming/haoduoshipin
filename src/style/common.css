@@ -14,7 +14,6 @@
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(33, 150, 243,0.1);
 }
 .work-container{
   display: flex;
@@ -64,6 +63,7 @@ body{
 .card{
   transition: all 1s ease;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 .card:hover{
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
@@ -76,6 +76,7 @@ body{
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 10px;
   border: 1px solid #ddd;
   background-color: #fff;
   padding-top: 1em;

@@ -11,7 +11,8 @@ class Search extends React.Component {
     // console.log(this.props.handelSearch);
     let styles={
       root:{
-        padding:'50px 10px'
+        padding:'50px 10px',
+        boxShadow: 'rgba(0, 0, 0, 0.15) 0px 1px 6px, rgba(0, 0, 0, 0.15) 0px 1px 4px'
       },
       title:{
         color:'#fff',

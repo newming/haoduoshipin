@@ -41,7 +41,8 @@ class Item extends React.Component {
         backgroundColor: 'rgb(0, 188, 212)',
         lineHeight:'75px',
         textAlign:'center',
-        color:'#fff'
+        color:'#fff',
+        boxShadow: 'rgba(0, 0, 0, 0.15) 0px 1px 6px, rgba(0, 0, 0, 0.15) 0px 1px 4px'
       },
       p:{
         margin:'20px auto',
