@@ -5,7 +5,7 @@ import axios from 'axios';
 import CircularProgress from 'material-ui/CircularProgress';
 import IconButton from 'material-ui/IconButton';
 import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
-import {hashHistory} from 'react-router';
+import {browserHistory} from 'react-router';
 import {getMarkdown} from '../utils/helpers.js';
 
 class Item extends React.Component {
@@ -26,8 +26,8 @@ class Item extends React.Component {
     });
   }
   handleBack(){
-    // console.log(hashHistory);
-    hashHistory.goBack();
+    // console.log(browserHistory);
+    browserHistory.goBack();
   }
   render () {
     marked.setOptions({
