@@ -11,6 +11,7 @@ import PageNotFound from './components/PageNotFound.js';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
+    <Route path="haoduoshipin" component={Home} />
     <Route path="blog" component={Blog} />
     <Route path="about" component={About} />
     <Route path="blog/:item" component={Item} />
