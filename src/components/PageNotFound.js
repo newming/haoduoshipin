@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import IconButton from 'material-ui/IconButton';
 import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 
 const propTypes = {
   location: PropTypes.object.isRequired,

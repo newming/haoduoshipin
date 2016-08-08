@@ -19,17 +19,19 @@
       // with Internet Explorer (it is currently > 512 bytes)
       /////////////////////////////////////////////////////////////////////////
 
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        '/?' +
-        (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // var l = window.location;
+      // l.replace(
+      //   l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      //   '/?' +
+      //   (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
+      //   (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      //   l.hash
+      // );
+      // 使用出现问题，先回退了
 
     </script>
   </head>
   <body>
+    <h1>404</h1>
   </body>
 </html>
