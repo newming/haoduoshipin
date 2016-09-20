@@ -24,7 +24,7 @@ class Works extends React.Component {
             </CardMedia>
           </Card>
         </a>
-        <a href="http://duopingshidai.com" className="work-list">
+        <a href="http://newming.coding.me/test/clock/" className="work-list">
           <Card className="work-card">
             <CardMedia overlay={<CardTitle title="自制时钟" subtitle="canvas 小 demo" style={styles.title}/>} >
               <img src="http://7xopqp.com1.z0.glb.clouddn.com/contain3.jpg" />
